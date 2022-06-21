@@ -1,0 +1,18 @@
+[
+  {
+    "notebook": [
+      {
+        "id": "notebook",
+        "nome": "Notebook",
+        "preco": 4000
+      }
+    ],
+    "tablet": [
+      {
+        "id": "tablet",
+        "nome": "Tablet",
+        "preco": 1500
+      }
+    ]
+  }
+]
