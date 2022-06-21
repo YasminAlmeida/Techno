@@ -78,7 +78,7 @@ body{
   padding-bottom: 200px;
 }
 .modalImg img{
-  max-width: 300px;  
+  max-width: 350px;  
   display: block;  
   box-shadow:rgba(0, 0, 0, 0.1) 0px 3px 4px, rgba(0, 0, 0, 0.2) 0px 4px 10px;  
 }
@@ -212,20 +212,24 @@ header{
 }
 .carrinhoContainer{
   position: relative;
+  margin: 80px auto;
   background-color: #ffff;
   max-width: 800px;
   animation: .3s forwards fadeInDown;
-  left: 20%;  
   padding: 40px;
 }
 .carrinhoFechar{
-  position: relative;
-  left: 740px;
-  top: -60px;
+  border-radius: 50%;
+  border: 2px solid black;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-}
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 3px 4px rgb(0 0 0 / 10%), 0px 4px 10px rgb(0 0 0 / 20%);
+  }
 .carrinhoTitulo{
   margin-bottom: 10px;
   border-bottom: 2px solid #000;
@@ -260,4 +264,60 @@ header{
   border: none;
   font-family: "Noto Serif";
   margin-top: 10px;
+}
+@media(max-width:820px){
+  .produto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 300px;
+  }
+  .produtoTitulo {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  .produtoInfo{
+    padding: 10px 0px 10px 20px;
+  }
+  header {
+    margin: 20px 0px 10px -50px;
+  }
+  .produtoImg {
+    max-width: 100%;
+  }
+  .carrinhoTitulo {
+    font-size: 1.4rem;
+  }
+  .modalContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px 0px 0px 70px;
+    align-items: flex-end;
+    }
+  .modalNome {
+    font-size: 2rem;
+  }
+  .modalDescricao,
+  .avaliacaoDescricao,
+  .avaliacaoUsuario{
+    font-size: .9rem;
+    margin-top: 10px;
+  }
+  .reviewsSubtitulo{
+    font-size: 1.5rem;
+  }
+  .bntAdicionar {
+    margin: 20px 0px;
+  }
+  .modalInfo {
+    margin-left: 100px;
+  }
+  .modalImg{
+    display: flex;
+    justify-content: flex-end;    
+    padding-bottom: 10px;
+  }
+  .modalImg img{
+    max-width: 87%;
+  }
 }
